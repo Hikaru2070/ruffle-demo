@@ -1,0 +1,1 @@
+function copyToAudioBufferInterleaved(n,a){const l=n.length,r=n.getChannelData(0),c=n.getChannelData(1);let t=0,e=0;for(;e<l;)r[e]=a[t],c[e]=a[t+1],e++,t+=2}function callExternalInterface(name,args){return eval(`(${name})(...args)`)}export{callExternalInterface as a,copyToAudioBufferInterleaved as c};
